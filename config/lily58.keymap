@@ -33,7 +33,7 @@
             display-name = "Base";
             bindings = <
 &kp ESC    &kp N1         &kp N2     &kp N3      &kp N4    &kp N5                          &kp C_VOLUME_UP    &kp N7      &kp N8   &kp N9  &to 1  &to 2
-&kp TAB    &kp SQT        &kp COMMA  &kp PERIOD  &kp P     &kp Y                           &kp C_VOLUME_DOWN  &kp PERIOD  &kp A    &kp R   &kp T  &kp S
+&kp TAB    &kp SQT        &kp COMMA  &kp PERIOD  &kp P     &kp Y                           &kp C_VOLUME_DOWN  &kp PERIOD  &kp A    &kp R   &kp T  &lt 1 S
 &kp LCTRL  &kp A          &kp O      &kp E       &kp U     &kp I                           &kp TAB            &kp H       &kp E    &kp Y   &kp I  &kp O
 &kp LSHFT  &kp SEMICOLON  &kp Q      &kp J       &kp K     &kp X   &kp LBKT     &kp RCTRL  &kp INS            &kp M       &kp N    &kp M   &kp G  &kp Z
                                      &kp LALT    &kp LGUI  &mo 1   &kp SPACE    &kp RMETA  &kp RSHIFT         &kp BSPC    &kp DEL
