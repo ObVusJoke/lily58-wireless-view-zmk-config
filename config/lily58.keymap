@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <32 33 34 35>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -22,11 +32,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1         &kp N2     &kp N3      &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8    &kp N9  &kp N0  &kp GRAVE
-&kp TAB    &kp SQT        &kp COMMA  &kp PERIOD  &kp P     &kp Y                          &kp F   &kp G     &kp C     &kp R   &kp L   &kp SLASH
-&kp LCTRL  &kp A          &kp O      &kp E       &kp U     &kp I                          &kp D   &kp H     &kp T     &kp N   &kp S   &kp MINUS
-&kp LSHFT  &kp SEMICOLON  &kp Q      &kp J       &kp K     &kp X   &kp LBKT     &kp RBKT  &kp B   &kp M     &kp W     &kp V   &kp Z   &kp RSHFT
-                                     &kp LALT    &kp LGUI  &mo 1   &kp SPACE    &kp RET   &mo 2   &kp BSPC  &kp RGUI
+&kp ESC    &kp N1         &kp N2     &kp N3      &kp N4    &kp N5                          &kp C_VOLUME_UP    &kp N7      &kp N8   &kp N9  &to 1  &to 2
+&kp TAB    &kp SQT        &kp COMMA  &kp PERIOD  &kp P     &kp Y                           &kp C_VOLUME_DOWN  &kp PERIOD  &kp A    &kp R   &kp T  &kp S
+&kp LCTRL  &kp A          &kp O      &kp E       &kp U     &kp I                           &kp TAB            &kp H       &kp E    &kp Y   &kp I  &kp O
+&kp LSHFT  &kp SEMICOLON  &kp Q      &kp J       &kp K     &kp X   &kp LBKT     &kp RCTRL  &kp INS            &kp M       &kp N    &kp M   &kp G  &kp Z
+                                     &kp LALT    &kp LGUI  &mo 1   &kp SPACE    &kp RMETA  &kp RSHIFT         &kp BSPC    &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,11 +52,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &trans  &trans     &trans     &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH     &kp ASTERISK  &kp MINUS
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &trans           &kp EQUAL             &kp NUMBER_7           &kp NUMBER_8  &kp N9        &kp PLUS
+&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET        &kp TAB               &kp NUMBER_4           &kp N5        &kp NUMBER_6  &kp PERIOD
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &to 0   &trans           &kp MINUS             &kp NUMBER_1           &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+                                        &trans        &trans        &trans        &trans    &trans  &kp RIGHT_SHIFT  &trans                &kp N0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
