@@ -85,10 +85,10 @@
 
         mirror {
             bindings = <
-&kp BACKSPACE  &kp N0  &kp N9  &kp N8  &kp N7  &kp NUMBER_6                    &kp N5           &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp ESC
-&kp SLASH      &kp L   &kp R   &kp C   &trans  &trans                          &trans           &trans        &trans        &trans        &trans        &trans
-&trans         &trans  &trans  &trans  &trans  &trans                          &trans           &trans        &trans        &trans        &trans        &trans
-&trans         &trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans           &trans        &kp QUESTION  &kp COMMA     &kp SQT       &kp EXCLAMATION
+&kp BACKSPACE  &kp N0  &kp N9  &kp N8  &kp N7  &kp NUMBER_6                    &kp N5           &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1   &kp ESC
+&kp SLASH      &kp L   &kp R   &kp C   &kp G   &kp F                           &kp Y            &kp P         &kp PERIOD    &kp COMMA     &kp SQT        &kp TAB
+&kp MINUS      &kp S   &kp N   &kp T   &kp H   &kp D                           &kp I            &kp U         &kp E         &kp O         &kp A          &trans
+&trans         &kp Z   &kp V   &kp W   &kp M   &kp B         &trans    &trans  &kp X            &kp K         &kp J         &kp Q         &kp SEMICOLON  &none
                                &trans  &trans  &trans        &trans    &trans  &kp RIGHT_SHIFT  &trans        &trans
             >;
         };
